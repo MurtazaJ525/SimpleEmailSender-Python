@@ -1,7 +1,7 @@
 import smtplib
 
-my_email = "mra8135100@gmail.com"
-password = "bnbsrvrpvolmctcq"
+my_email = "abc@gmail.com"
+password = "Your AppPass"
 
 with smtplib.SMTP("smtp.gmail.com") as connection:
     connection.starttls()
@@ -10,7 +10,7 @@ with smtplib.SMTP("smtp.gmail.com") as connection:
     # Send the email
     connection.sendmail(
         from_addr=my_email,
-        to_addrs="mr.murtazaj+github@gmail.com",
+        to_addrs="ab12@gmail.com",
         msg="Subject:Hello\n\nThis is the body of my email."
     )
 
