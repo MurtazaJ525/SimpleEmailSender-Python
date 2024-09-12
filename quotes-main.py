@@ -2,8 +2,8 @@ import datetime as dt
 import random
 import smtplib
 
-MY_EMAIL = "mra8135100+github@gmail.com"
-MY_PASSWORD = "bnbsrvrpvolmctcq"
+MY_EMAIL = "abs@gmail.com"
+MY_PASSWORD = "your pass key"
 
 # Get the current date and weekday
 now = dt.datetime.now()
@@ -39,7 +39,7 @@ if 0 <= weekday <= 6:
         connection.login(MY_EMAIL, MY_PASSWORD)
         connection.sendmail(
             from_addr=MY_EMAIL,
-            to_addrs=["attarsarrah53@gmail.com", "mr.murtazaj@gmail.com","vishalnarsinh@gmail.com","husainmt52@gmail.com"],
+            to_addrs=["abc1@gmail.com", "abc2@gmail.com","abc3@gmail.com","abc4@gmail.com"],
             msg=f"Subject:{days_of_week[weekday]} Motivation\n"
                 f"Content-Type: text/html\n\n{html_message}"
         )
